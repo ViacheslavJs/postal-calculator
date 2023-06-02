@@ -244,11 +244,11 @@ function showPrice() {
   const classIs = priceIcon.classList.contains('fa-angle-up'); 
   //console.log(classIs);  
   if (classIs == true) {
-    disablePageScrolling();  
+    //disablePageScrolling();  
              
   } else if (classIs == false) {
     price.style.display = 'none';
-    enablePageScrolling();
+    //enablePageScrolling();
   }
     
    
@@ -268,7 +268,7 @@ function showPrice() {
       //console.log(classIs); 
       //console.log(classIsIcon);
       price.style.display = 'none'; 
-      enablePageScrolling();      
+      //enablePageScrolling();      
     }
   });  
     
