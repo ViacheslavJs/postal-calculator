@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="fontawesome/fontcss/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>@@title</title>
+  </head>
+  <body>
+
+    <!-- TODO - module post-calc -->
+    <section id="post-calc" class="post-calc">         
+      <div class="container">                          
+        <div class="post-calc__content">  
+        
+                                                                             
+                
+          <div class="post-calc__form pc-form">
+                                      
+            <div class="pc-form__info">                    
+              <h2 class="pc-form__title">Shipping cost calculation</h2>                            
+              <p class="pc-form__text">Let's count something...</p>                                                   
+            </div>     
+            
+            <span class="pc-form__price-icon fas fa-angle-down blind-click"></span>                 
+            <div class="pc-form__price pc-price blind-click">
+              
+              <h3 class="pc-price__title blind-click">Price:</h3>
+              <div class="pc-price__standarts blind-click">
+                <span class="pc-price__properties blind-click">Standard packing, mm: 500x250x150</span>
+                <span class="pc-price__properties blind-click">weight: up to 1kg</span>
+                <span class="pc-price__properties pc-price__properties--value_cost blind-click">37.50&nbsp;UAH</span>
+              </div>  
+              <div class="pc-price__standarts blind-click">
+                <span class="pc-price__properties blind-click">Cost per kg:</span>
+                <span class="pc-price__properties pc-price__properties--value blind-click">3&nbsp;UAH</span>
+              </div>
+              <div class="pc-price__standarts blind-click">
+                <span class="pc-price__properties blind-click">exceeding the volume of packaging by 2 times:</span>
+                <span class="pc-price__properties pc-price__properties--value blind-click">+12%</span>
+              </div>
+              <div class="pc-price__standarts blind-click">
+                <span class="pc-price__properties blind-click">distance more than 800km:</span>
+                <span class="pc-price__properties pc-price__properties--value blind-click">+100%</span>
+              </div>        
+              
+            </div>   
+         
+            <form action="#" id="form" class="pc-form__body">  
+              <div class="form__flex-alignment-item">
+                                
+                <div class="pc-form__item">              
+                  <label for="length" class="pc-form__label">Package length, mm:</label>
+                  <input autofocus type="text" id="length" class="pc-form__input input" placeholder="Length, mm">
+              
+                  <div class="pc-form__tooltip">
+                    <span class="pc-form__tooltip-text">invalid character!</span>
+                  </div>
+              
+                </div>
+                <div class="pc-form__item">              
+                  <label for="width" class="pc-form__label">Packing width, mm:</label>
+                  <input id="width" type="text" class="pc-form__input input" 
+                         contenteditable="true" placeholder="Width, mm">
+                     
+                  <div class="pc-form__tooltip">
+                    <span class="pc-form__tooltip-text">invalid character!</span>
+                  </div>
+              
+                </div>
+                <div class="pc-form__item">              
+                  <label for="height" class="pc-form__label">Packing height, mm:</label>
+                  <input id="height" type="text" class="pc-form__input input" placeholder="Height, mm">
+              
+                  <div class="pc-form__tooltip">
+                    <span class="pc-form__tooltip-text">invalid character!</span>
+                  </div>
+              
+                </div>
+                <div class="pc-form__item">              
+                  <label for="weight" class="pc-form__label">Cargo weight, kg:</label>
+                  <input id="weight" type="text" class="pc-form__input input" placeholder="Weight, kg">
+              
+                  <div class="pc-form__tooltip">
+                    <span class="pc-form__tooltip-text">invalid character!</span>
+                  </div>
+              
+                </div>
+                <div class="pc-form__item">              
+                  <label for="distance" class="pc-form__label">Distance, km:</label>
+                  <input id="distance" type="text" class="pc-form__input input" placeholder="Distance, km">
+              
+                  <div class="pc-form__tooltip">
+                    <span class="pc-form__tooltip-text">invalid character!</span>
+                  </div>
+              
+                </div> 
+                        
+              </div><!-- pc-form__flex-alignment -->
+          
+              </form>
+          
+              <div class="pc-form__flex-alignment-out">    
+                <span id="res-out" class="pc-form__result"></span>
+                <div class="pc-form__flex-alignment-button">  
+                  <button id="btn" class="pc-form__button">Сalculate</button> 
+                  <button id="btnRset" class="pc-form__button">Reset</button> 
+                </div>    
+              </div>
+          
+              </div><!-- class="pc-form" -->
+                          
+        </div><!-- post-calc__content -->    
+      </div><!-- container --> 
+         
+    </section><!-- post-calc -->  
+    <!-- module post-calc -->
+          
+    <script src="js/postal-calculator.js"></script> 
+  </body>
+</html>        
+          
