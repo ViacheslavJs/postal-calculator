@@ -1,4 +1,4 @@
-#Shipping calculator in JavaScript.
+# Shipping calculator in JavaScript.
 
 Calculation parameters:
  - Standard packaging - `500mm x 250mm x 150mm`
